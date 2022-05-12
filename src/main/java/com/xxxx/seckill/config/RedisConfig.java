@@ -30,6 +30,7 @@ public class RedisConfig {
 		//hash类型 value序列化
 		redisTemplate.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
 
+		
 		//注入连接工厂
 		redisTemplate.setConnectionFactory(redisConnectionFactory);
 		return redisTemplate;
