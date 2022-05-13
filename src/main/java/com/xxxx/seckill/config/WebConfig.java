@@ -20,6 +20,9 @@ public class WebConfig implements WebMvcConfigurer {
 	@Autowired
 	private UserArgumentResolver userArgumentResolver;
 
+	@Autowired
+	private AccessLimitInterceptor accessLimitInterceptor;
+
 	@Override
 	public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {
 		resolvers.add(userArgumentResolver);
@@ -28,5 +31,10 @@ public class WebConfig implements WebMvcConfigurer {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
+	}
+
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		registry.addInterceptor(accessLimitInterceptor);
 	}
 }
