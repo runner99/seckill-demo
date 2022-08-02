@@ -29,7 +29,7 @@ spring:
   # 数据源配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/seckill?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.152.130:3306/seckill?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
     hikari:
@@ -53,7 +53,7 @@ spring:
   #redis配置
   redis:
     #redis地址
-    host: 192.168.152.133
+    host: 192.168.152.130
     #端口
     port: 6379
     #默认为 0 库
@@ -74,11 +74,11 @@ spring:
   # RabbitMQ
   rabbitmq:
     # 服务器
-    host: 192.168.152.134
+    host: 192.168.152.130
     #用户名
-    username: guest
+    username: admin
     #密码
-    password: guest
+    password: 123
     # 虚拟主机
     virtual-host: /
     #端口
