@@ -1,7 +1,5 @@
 package com.xxxx.seckill.controller;
 
-import com.xxxx.seckill.mapper.UserMapper;
-import com.xxxx.seckill.pojo.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

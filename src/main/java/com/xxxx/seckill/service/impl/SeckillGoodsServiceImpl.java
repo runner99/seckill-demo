@@ -3,7 +3,6 @@ package com.xxxx.seckill.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xxxx.seckill.pojo.SeckillGoods;
 import com.xxxx.seckill.service.SeckillGoodsService;
-import com.xxxx.seckill.mapper.SeckillGoodsMapper;
 import org.springframework.stereotype.Service;
 
 /**

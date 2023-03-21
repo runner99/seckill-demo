@@ -2,13 +2,11 @@ package com.xxxx.seckill.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xxxx.seckill.exception.GlobalException;
-import com.xxxx.seckill.mapper.UserMapper;
 import com.xxxx.seckill.pojo.User;
 import com.xxxx.seckill.service.UserService;
 import com.xxxx.seckill.utils.CookieUtil;
 import com.xxxx.seckill.utils.MD5Util;
 import com.xxxx.seckill.utils.UUIDUtil;
-import com.xxxx.seckill.utils.ValidatorUtil;
 import com.xxxx.seckill.vo.LoginVo;
 import com.xxxx.seckill.vo.RespBean;
 import com.xxxx.seckill.vo.RespBeanEnum;
@@ -17,7 +15,6 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 

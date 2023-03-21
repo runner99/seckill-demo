@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xxxx.seckill.pojo.SeckillOrder;
 import com.xxxx.seckill.pojo.User;
 import com.xxxx.seckill.service.SeckillOrderService;
-import com.xxxx.seckill.mapper.SeckillOrderMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
